@@ -1,6 +1,6 @@
-from sparse_matrix import sparsematrix
+from sparse_matrix import Sparsematrix
 
-def Main():
+def main():
     print("==sparsematrix operation==")
     print("choose operation you want:")
     print("1, addition")
@@ -14,15 +14,17 @@ def Main():
 
 
     try:
-        matrix1 = sparsematrix(matrixfilepath=file1)
-        matrix2 = sparsematrix(matrixfilepath=file2)
+        matrix1 = Sparsematrix(0, 0)
+        matrix1.Load_From_File(file1)
+        matrix2 = Sparsematrix(0, 0)
+        matrix2.Load_From_File(file2)
 
 
         if choice == "1":
             result = matrix1.addition(matrix2)
             print("addition result:")
         elif choice == "2":
-            result = matrix2.substraction(matrix2)
+            result = matrix1.subtraction(matrix2)
             print("substraction result")
         elif choice == "3":
             result = matrix1.multiplication(matrix2)
@@ -31,7 +33,7 @@ def Main():
             print("wrong choice")
             return
         
-        for (row. col), value in sorted(result.data.items()):
+        for (row, col), value in sorted(result.data.items()):
             print(f"({row}, {col}, {value})")
 
     except Exception as e:

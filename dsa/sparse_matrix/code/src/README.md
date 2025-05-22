@@ -5,10 +5,10 @@ Date: 24 may 2025
 Language Used: Python
 
 Project Structure:
-├── /dsa/sparse_matrix/code/src/           → Python source code files  
-│   ├── SparseMatrix.py                    → Contains the SparseMatrix class and all matrix operations  
-│   └── main.py                            → Entry point script that allows user to choose matrix operation  
-├── /dsa/sparse_matrix/sample_inputs/      → Input matrix files (.txt format)
+├── /dsa/sparse_matrix/code/src/                         → Python source code files  
+│   ├── SparseMatrix.py                                   → Contains the SparseMatrix class and all matrix operations  
+│   └── main.py                                           → Entry point script that allows user to choose matrix operation  
+├── /dsa/sparse_matrix/sample_inputs/                     → Input matrix files (.txt format)
 
 ## How to Run
 
